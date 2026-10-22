@@ -9,12 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [
-            85.0,
-            104.0,
-            760.0,
-            300.0
-        ],
+        "rect": [ 85.0, 104.0, 760.0, 300.0 ],
         "description": "br.utility.mute.2.2 -- Created by Brian Riordan, guaguanco127@gmail.com -- https://github.com/guaguanco127/",
         "boxes": [
             {
@@ -26,12 +21,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [
-                        380.0,
-                        15.0,
-                        401.0,
-                        33.0
-                    ],
+                    "patching_rect": [ 380.0, 15.0, 401.0, 33.0 ],
                     "text": "br.utility.mute.2.2 -- Created by Brian Riordan, guaguanco127@gmail.com\nhttps://github.com/guaguanco127/"
                 }
             },
@@ -39,38 +29,24 @@
                 "box": {
                     "comment": "Audio In (Signal)",
                     "id": "obj-in1",
-                    "index": 0,
+                    "index": 1,
                     "maxclass": "inlet",
                     "numinlets": 0,
                     "numoutlets": 1,
-                    "outlettype": [
-                        ""
-                    ],
-                    "patching_rect": [
-                        15.0,
-                        15.0,
-                        30.0,
-                        30.0
-                    ]
+                    "outlettype": [ "signal" ],
+                    "patching_rect": [ 15.0, 15.0, 30.0, 30.0 ]
                 }
             },
             {
                 "box": {
                     "comment": "Mute (Signal/Int) 0/1. 1 = silent, 10 ms S-curve fade. Default 0",
                     "id": "obj-in2",
-                    "index": 0,
+                    "index": 2,
                     "maxclass": "inlet",
                     "numinlets": 0,
                     "numoutlets": 1,
-                    "outlettype": [
-                        ""
-                    ],
-                    "patching_rect": [
-                        165.0,
-                        15.0,
-                        30.0,
-                        30.0
-                    ]
+                    "outlettype": [ "signal" ],
+                    "patching_rect": [ 165.0, 15.0, 30.0, 30.0 ]
                 }
             },
             {
@@ -81,9 +57,7 @@
                     "maxclass": "newobj",
                     "numinlets": 2,
                     "numoutlets": 1,
-                    "outlettype": [
-                        "signal"
-                    ],
+                    "outlettype": [ "signal" ],
                     "patcher": {
                         "fileversion": 1,
                         "appversion": {
@@ -94,12 +68,7 @@
                             "modernui": 1
                         },
                         "classnamespace": "dsp.gen",
-                        "rect": [
-                            100.0,
-                            100.0,
-                            700.0,
-                            600.0
-                        ],
+                        "rect": [ 100.0, 100.0, 700.0, 600.0 ],
                         "boxes": [
                             {
                                 "box": {
@@ -109,15 +78,8 @@
                                     "maxclass": "newobj",
                                     "numinlets": 0,
                                     "numoutlets": 1,
-                                    "outlettype": [
-                                        ""
-                                    ],
-                                    "patching_rect": [
-                                        50.0,
-                                        20.0,
-                                        200.0,
-                                        22.0
-                                    ],
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 50.0, 20.0, 200.0, 22.0 ],
                                     "text": "in 1 @comment \"Audio In (Signal)\""
                                 }
                             },
@@ -130,15 +92,8 @@
                                     "maxclass": "newobj",
                                     "numinlets": 0,
                                     "numoutlets": 1,
-                                    "outlettype": [
-                                        ""
-                                    ],
-                                    "patching_rect": [
-                                        265.0,
-                                        20.0,
-                                        200.0,
-                                        22.0
-                                    ],
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 591.0, 6.5, 200.0, 49.0 ],
                                     "text": "in 2 @comment \"Mute (Signal/Int) 0/1. 1 = silent, 10 ms S-curve fade. Default 0\""
                                 }
                             },
@@ -152,15 +107,8 @@
                                     "maxclass": "codebox",
                                     "numinlets": 2,
                                     "numoutlets": 1,
-                                    "outlettype": [
-                                        ""
-                                    ],
-                                    "patching_rect": [
-                                        50.0,
-                                        70.0,
-                                        560.0,
-                                        420.0
-                                    ]
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 50.0, 70.0, 560.0, 420.0 ]
                                 }
                             },
                             {
@@ -172,12 +120,7 @@
                                     "maxclass": "newobj",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [
-                                        50.0,
-                                        510.0,
-                                        200.0,
-                                        22.0
-                                    ],
+                                    "patching_rect": [ 50.0, 510.0, 200.0, 35.0 ],
                                     "text": "out 1 @comment \"Audio Out (Signal)\""
                                 }
                             }
@@ -185,48 +128,25 @@
                         "lines": [
                             {
                                 "patchline": {
-                                    "destination": [
-                                        "obj-3",
-                                        0
-                                    ],
-                                    "source": [
-                                        "obj-1",
-                                        0
-                                    ]
+                                    "destination": [ "obj-3", 0 ],
+                                    "source": [ "obj-1", 0 ]
                                 }
                             },
                             {
                                 "patchline": {
-                                    "destination": [
-                                        "obj-3",
-                                        1
-                                    ],
-                                    "source": [
-                                        "obj-2",
-                                        0
-                                    ]
+                                    "destination": [ "obj-3", 1 ],
+                                    "source": [ "obj-2", 0 ]
                                 }
                             },
                             {
                                 "patchline": {
-                                    "destination": [
-                                        "obj-4",
-                                        0
-                                    ],
-                                    "source": [
-                                        "obj-3",
-                                        0
-                                    ]
+                                    "destination": [ "obj-4", 0 ],
+                                    "source": [ "obj-3", 0 ]
                                 }
                             }
                         ]
                     },
-                    "patching_rect": [
-                        15.0,
-                        96.0,
-                        180.0,
-                        22.0
-                    ],
+                    "patching_rect": [ 15.0, 96.0, 180.0, 22.0 ],
                     "text": "gen~ @title br.utility.mute.2.2"
                 }
             },
@@ -234,16 +154,11 @@
                 "box": {
                     "comment": "Audio Out (Signal)",
                     "id": "obj-out1",
-                    "index": 0,
+                    "index": 1,
                     "maxclass": "outlet",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [
-                        15.0,
-                        170.0,
-                        30.0,
-                        30.0
-                    ]
+                    "patching_rect": [ 15.0, 170.0, 30.0, 30.0 ]
                 }
             },
             {
@@ -255,12 +170,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [
-                        344.0,
-                        70.0,
-                        520.0,
-                        74.0
-                    ],
+                    "patching_rect": [ 344.0, 70.0, 450.0, 74.0 ],
                     "text": "click-free mute: 1 = silent, 0 = playing. The gain follows a 10 ms S-curve, so it never jumps (a jump = a click) and lands on true silence. The mute inlet takes a number or a signal; values in between give partial gain. No State outlet here: whatever drives the core already knows the value. The .ui versions report their button."
                 }
             }
@@ -268,42 +178,22 @@
         "lines": [
             {
                 "patchline": {
-                    "destination": [
-                        "obj-out1",
-                        0
-                    ],
-                    "source": [
-                        "obj-gen",
-                        0
-                    ]
+                    "destination": [ "obj-out1", 0 ],
+                    "source": [ "obj-gen", 0 ]
                 }
             },
             {
                 "patchline": {
-                    "destination": [
-                        "obj-gen",
-                        0
-                    ],
-                    "source": [
-                        "obj-in1",
-                        0
-                    ]
+                    "destination": [ "obj-gen", 0 ],
+                    "source": [ "obj-in1", 0 ]
                 }
             },
             {
                 "patchline": {
-                    "destination": [
-                        "obj-gen",
-                        1
-                    ],
-                    "order": 1,
-                    "source": [
-                        "obj-in2",
-                        0
-                    ]
+                    "destination": [ "obj-gen", 1 ],
+                    "source": [ "obj-in2", 0 ]
                 }
             }
-        ],
-        "autosave": 0
+        ]
     }
 }
