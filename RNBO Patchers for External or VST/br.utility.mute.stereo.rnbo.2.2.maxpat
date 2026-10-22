@@ -1090,10 +1090,10 @@
                                             },
                                             "classnamespace": "dsp.gen",
                                             "rect": [
-                                                -387.0,
-                                                -966.0,
-                                                1492.0,
-                                                725.0
+                                                100.0,
+                                                100.0,
+                                                824.0,
+                                                616.0
                                             ],
                                             "boxes": [
                                                 {
@@ -1101,9 +1101,9 @@
                                                         "maxclass": "newobj",
                                                         "text": "in 1 @comment \"Left In (Signal)\"",
                                                         "patching_rect": [
-                                                            50.0,
                                                             20.0,
-                                                            200.0,
+                                                            20.0,
+                                                            189.0,
                                                             22.0
                                                         ],
                                                         "numinlets": 0,
@@ -1121,9 +1121,9 @@
                                                         "maxclass": "newobj",
                                                         "text": "in 2 @comment \"Right In (Signal)\"",
                                                         "patching_rect": [
-                                                            265.0,
+                                                            290.5,
                                                             20.0,
-                                                            200.0,
+                                                            197.0,
                                                             22.0
                                                         ],
                                                         "numinlets": 0,
@@ -1142,10 +1142,10 @@
                                                         "text": "in 3 @comment \"Mute (Signal/Int) 0/1. 1 = silent, 10 ms S-curve fade. Default 0\"",
                                                         "linecount": 3,
                                                         "patching_rect": [
-                                                            480.0,
+                                                            561.0,
                                                             20.0,
                                                             200.0,
-                                                            22.0
+                                                            49.0
                                                         ],
                                                         "numinlets": 0,
                                                         "fontname": "Arial",
@@ -1161,8 +1161,8 @@
                                                     "box": {
                                                         "maxclass": "codebox",
                                                         "patching_rect": [
-                                                            50.0,
-                                                            70.0,
+                                                            20.0,
+                                                            94.0,
                                                             560.0,
                                                             420.0
                                                         ],
@@ -1184,9 +1184,9 @@
                                                         "maxclass": "newobj",
                                                         "text": "out 1 @comment \"Left Out (Signal)\"",
                                                         "patching_rect": [
-                                                            50.0,
-                                                            510.0,
-                                                            200.0,
+                                                            20.0,
+                                                            544.0,
+                                                            205.0,
                                                             22.0
                                                         ],
                                                         "numinlets": 1,
@@ -1200,11 +1200,10 @@
                                                     "box": {
                                                         "maxclass": "newobj",
                                                         "text": "out 2 @comment \"Right Out (Signal)\"",
-                                                        "linecount": 2,
                                                         "patching_rect": [
-                                                            265.0,
-                                                            510.0,
-                                                            200.0,
+                                                            561.0,
+                                                            544.0,
+                                                            213.0,
                                                             22.0
                                                         ],
                                                         "numinlets": 1,
