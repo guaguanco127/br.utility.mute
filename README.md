@@ -19,6 +19,8 @@ These files were created with Max 9, or RNBO.
 [Max/MSP RNBO for External or VST](https://github.com/guaguanco127/br.utility.mute/tree/main/RNBO%20Patchers%20for%20External%20or%20VST) To build your own Max external, or a VST or AU audio plugin (needs RNBO)  
 [Ableton Max for Live Device](https://github.com/guaguanco127/br.utility.mute/tree/main/Ableton%20Max%20For%20Live) To use inside of Ableton Suite   
 
+**Max for Live note:** if Live's audio engine is off (no audio output device chosen, an orange bar at the bottom of Live), the device opens with its controls at 0 or their lowest value. Turn audio on and they jump to their default values by themselves.
+
 ## <a name="About"></a>About
 
 A click-free mute. Switching a gain straight from 1 to 0 cuts the wave mid-swing, and that jump is heard as a click. br.utility.mute moves the gain along a 10 ms S-curve instead: too fast to hear as a fade, smooth enough that nothing clicks, and it lands on true silence. Works at any sample rate.
